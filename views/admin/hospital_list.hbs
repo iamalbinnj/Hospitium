@@ -1,0 +1,28 @@
+<div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Image</th>
+      <th scope="col">Hospital Name</th>
+      <th scope="col">Hospital faculty Name</th>
+      <th scope="col">Hospital Address</th>
+      <th scope="col">More</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each hosList}}
+    <tr>
+      <th scope="row">1</th>
+      <td><img style="width:50px;height:50px;" src="{{this.hImage}}" alt=""></td>
+      <td>{{this.hName}}</td>
+      <td>{{this.hfaculty}}</td>
+      <td>{{this.hAddress}}</td>
+      <td><a href="#" class="btn btn-link">View Details</a></td>
+      <td><a href="#" class="btn btn-primary">Approve</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
